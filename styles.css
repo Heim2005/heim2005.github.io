@@ -23,34 +23,51 @@
 
 /* NAVBAR */
 .navbar {
-    background: #fff;
+    background: #ffffffd9;
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 50;
 }
 
 .nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 0;
+    padding: 14px 0;
 }
 
-.logo {
+.nav-left .logo {
     color: var(--accent);
-    font-weight: 800;
-    font-size: 1.6rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: -0.5px;
 }
 
-nav a {
-    margin-left: 20px;
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
     text-decoration: none;
     color: var(--text);
     font-weight: 500;
+    font-size: 1rem;
+    padding-bottom: 4px;
     transition: 0.2s;
+    border-bottom: 2px solid transparent;
 }
 
-nav a:hover,
-nav a.active {
+.nav-links a:hover {
     color: var(--accent-hover);
+    border-bottom: 2px solid var(--accent);
+}
+
+.nav-links a.active {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
 }
 
 /* HERO */
