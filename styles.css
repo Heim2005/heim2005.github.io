@@ -1,100 +1,114 @@
-/* Reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: "Inter", Arial, sans-serif;
 }
 
-/* Colors */
 :root {
-    --bg: #f5f5f7;
+    --bg: #f7f7fa;
     --text: #1a1a1a;
+    --subtle: #6c6c6c;
     --accent: #6366f1;
-    --accent-dark: #4f46e5;
-    --card-bg: #ffffff;
+    --accent-hover: #4f46e5;
+    --card: #ffffff;
 }
 
-/* Navbar */
+/* MAIN LAYOUT WRAPPER */
+.container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+/* NAVBAR */
 .navbar {
     background: #fff;
-    padding: 15px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #e5e5e5;
 }
 
-nav {
-    width: 90%;
-    margin: auto;
+.nav-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
 }
 
 .logo {
+    color: var(--accent);
+    font-weight: 800;
     font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--accent-dark);
 }
 
-nav ul {
-    display: flex;
-    gap: 20px;
-}
-
-nav ul a {
-    color: var(--text);
+nav a {
+    margin-left: 20px;
     text-decoration: none;
-    font-size: 1rem;
-    transition: 0.3s;
+    color: var(--text);
+    font-weight: 500;
+    transition: 0.2s;
 }
 
 nav a:hover,
 nav a.active {
-    color: var(--accent-dark);
+    color: var(--accent-hover);
 }
 
-/* Hero Section */
+/* HERO */
 .hero {
-    height: 80vh;
-    background: linear-gradient(to bottom right, #6366f1, #8b5cf6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    padding: 120px 0;
     color: white;
-    padding: 20px;
+    text-align: center;
 }
 
-.hero-inner h2 {
+.hero h2 {
     font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero span {
+    color: #dce3ff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* SECTIONS */
+.section {
+    padding: 70px 0;
+    background: var(--bg);
+}
+
+.centered-text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.centered-text h2 {
+    font-size: 2.2rem;
     margin-bottom: 10px;
 }
 
-.hero-inner h2 span {
-    color: #e0e7ff;
-}
-
-.hero-inner p {
-    max-width: 600px;
-    margin: auto;
-    font-size: 1.2rem;
-    opacity: 0.9;
-}
-
+/* BUTTONS */
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #fff;
-    color: var(--accent-dark);
+    padding: 12px 26px;
     border-radius: 6px;
-    text-decoration: none;
     font-weight: 600;
-    transition: 0.3s;
+    text-decoration: none;
+    background: var(--accent);
+    color: white;
+    transition: 0.2s;
 }
 
 .btn:hover {
-    background: #e5e7eb;
+    background: var(--accent-hover);
 }
 
 .btn.small {
@@ -102,47 +116,23 @@ nav a.active {
     font-size: 0.9rem;
 }
 
-/* About Section */
-.about {
-    padding: 60px 10%;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-/* Portfolio */
-.portfolio-header {
-    text-align: center;
-    padding: 50px 0 20px;
-}
-
-.portfolio-header p {
-    opacity: 0.7;
-    margin-top: 10px;
-}
-
+/* PORTFOLIO GRID */
 .portfolio-grid {
-    width: 90%;
-    margin: auto;
     display: grid;
-    gap: 30px;
-    padding: 20px 0 60px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
 .project-card {
-    background: var(--card-bg);
-    border-radius: 12px;
+    background: var(--card);
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    transition: 0.3s;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+    transition: 0.2s;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
 
 .project-card img {
@@ -161,14 +151,15 @@ nav a.active {
 
 .project-info p {
     margin-bottom: 15px;
-    opacity: 0.8;
+    color: var(--subtle);
 }
 
-/* Footer */
+/* FOOTER */
 footer {
-    background: #fff;
+    background: white;
+    border-top: 1px solid #e5e5e5;
     padding: 20px;
     text-align: center;
-    opacity: 0.6;
+    color: var(--subtle);
     margin-top: 40px;
 }
