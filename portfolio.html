@@ -1,64 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header class="navbar">
-    <nav>
+    <div class="container nav-container">
         <h1 class="logo">MyPortfolio</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="portfolio.html">Portfolio</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <a href="index.html">Home</a>
+            <a class="active" href="portfolio.html">Portfolio</a>
+        </nav>
+    </div>
 </header>
 
-<section class="portfolio-header">
-    <h2>My Work</h2>
-    <p>Projects I've built, designed, or contributed to.</p>
+<section class="section">
+    <div class="container centered-text">
+        <h2>My Projects</h2>
+        <p>A clean grid where you can place thumbnails, titles, and descriptions.</p>
+    </div>
 </section>
 
-<section class="portfolio-grid">
+<section class="section">
+    <div class="container portfolio-grid">
 
-    <!-- Project Card 1 -->
-    <div class="project-card">
-        <img src="https://via.placeholder.com/400x250" alt="Project Preview">
-        <div class="project-info">
-            <h3>Project Title</h3>
-            <p>Short description of your project goes here.</p>
-            <a href="#" class="btn small">View Project</a>
+        <!-- Project Card -->
+        <div class="project-card">
+            <img src="https://via.placeholder.com/500x300" alt="Project Preview" />
+            <div class="project-info">
+                <h3>Project Title</h3>
+                <p>A short description or tagline for the project.</p>
+                <a href="#" class="btn small">View</a>
+            </div>
         </div>
-    </div>
 
-    <!-- Project Card 2 -->
-    <div class="project-card">
-        <img src="https://via.placeholder.com/400x250" alt="Project Preview">
-        <div class="project-info">
-            <h3>Project Title</h3>
-            <p>Short description of your project goes here.</p>
-            <a href="#" class="btn small">View Project</a>
+        <!-- Project Card -->
+        <div class="project-card">
+            <img src="https://via.placeholder.com/500x300" alt="Project Preview" />
+            <div class="project-info">
+                <h3>Project Title</h3>
+                <p>A short description or tagline for the project.</p>
+                <a href="#" class="btn small">View</a>
+            </div>
         </div>
-    </div>
 
-    <!-- Project Card 3 -->
-    <div class="project-card">
-        <img src="https://via.placeholder.com/400x250" alt="Project Preview">
-        <div class="project-info">
-            <h3>Project Title</h3>
-            <p>Short description of your project goes here.</p>
-            <a href="#" class="btn small">View Project</a>
+        <!-- Project Card -->
+        <div class="project-card">
+            <img src="https://via.placeholder.com/500x300" alt="Project Preview" />
+            <div class="project-info">
+                <h3>Project Title</h3>
+                <p>A short description or tagline for the project.</p>
+                <a href="#" class="btn small">View</a>
+            </div>
         </div>
-    </div>
 
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 Your Name. All rights reserved.</p>
+    <div class="container">
+        <p>© 2026 Your Name</p>
+    </div>
 </footer>
 
 </body>
