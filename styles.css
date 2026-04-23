@@ -171,6 +171,12 @@
     color: var(--subtle);
 }
 
+.game-play{
+    display: absolute;
+    position: absolute;
+    
+}
+
 /* FOOTER */
 footer {
     background: white;
@@ -180,3 +186,4 @@ footer {
     color: var(--subtle);
     margin-top: 40px;
 }
+
