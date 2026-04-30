@@ -10,8 +10,7 @@
     <!--------------------->
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Coin Drop</title>
-    <link rel="shortcut icon" href="CoinDrop/TemplateData/favicon.ico">
+    <!-- <link rel="shortcut icon" href="CoinDrop/TemplateData/favicon.ico"> -->
     <link rel="stylesheet" href="CoinDrop/TemplateData/style.css">
     <!--------------------->
 
@@ -21,38 +20,129 @@
 </head>
 <body>
 
-<header class="navbar">
-    <div class="container nav-container">
-        <div class="nav-left">
-            <h1 class="logo">My Portfolio</h1>
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="nav-left">
+                <h1 class="logo">My Portfolio</h1>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+            </nav>
         </div>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-        </nav>
-    </div>
-</header>
+    </header>
 
 
-<section class="section">
-    <div class="container centered-text">
-        <h2>My Projects</h2>
-        <p>...</p>
-    </div>
-</section>
+    <section class="section">
+        <div class="container centered-text">
+            <h2>My Projects</h2>
+            <p>...</p>
+        </div>
+    </section>
+
+    <main class="grid">
+
+        <!-- FULL WIDTH ROW -->
+        <section class="project full">
+            <div class="media">
+                <img src="image1.jpg">
+            </div>
+            <div class="info">
+                <h2>Big Featured Project</h2>
+                <p class="date">2024</p>
+                <p class="desc">This takes the full row.</p>
+            </div>
+        </section>
+
+        <!-- TWO IN A ROW -->
+        <!-- <section class="project half">
+            <div class="media">
+                <video src="video.mp4" controls></video>
+            </div>
+            <div class="info">
+                <h2>Project A</h2>
+                <p class="date">2024</p>
+                <p class="desc">Half-width item.</p>
+            </div>
+        </section> -->
+
+        <section class="project half">
+            <div class="media">
+                <img src="PortfolioMedia/testIMG.jpg">
+            </div>
+            <div class="info">
+                <h2>Big Featured Project</h2>
+                <p class="date">2024</p>
+                <p class="desc">This takes the full row.</p>
+            </div>
+        </section>
+
+        <!-- <section class="project half">
+            <div class="media">
+                <iframe src="https://heim2005.github.io/CoinDrop/"></iframe> 
+            </div>
+            <div class="info">
+                <h2>Project B</h2>
+                <p class="date">2024</p>
+                <p class="desc">Another half-width item.</p>
+            </div>
+        </section> -->
+
+        <section class="project half">
+            <div class="media unity-wrapper">
+                
+                <div id="unity-container" > 
+                    <canvas id="unity-canvas" width=100% height=100% tabindex="-1"></canvas>
+                    <div id="unity-loading-bar">
+                        <div id="unity-logo"></div>
+                        <div id="unity-progress-bar-empty">
+                            <div id="unity-progress-bar-full"></div>
+                        </div>
+                    </div>
+                    <!-- <div id="unity-warning"> </div> -->
+                    <!-- <div id="unity-footer">
+                        <div id="unity-webgl-logo"></div>
+                        <div id="unity-fullscreen-button"></div>
+                        <div id="unity-build-title">Coin Drop</div>
+                    </div> -->
+                </div>
+                
+            </div>
+
+                <div class="info">
+                    <h2>Coin Drop</h2>
+                    <p class="date">2024</p>
+                    <p class="desc">Unity WebGL game built for physics interaction.</p>
+                </div>
+        </section>
+
+        <!-- FULL WIDTH AGAIN -->
+        <section class="project full">
+            <div class="media">
+                <img src="image2.jpg">
+            </div>
+            <div class="info">
+                <h2>Another Featured Work</h2>
+                <p class="date">2024</p>
+                <p class="desc">Full row again.</p>
+            </div>
+        </section>
+
+    </main>
 
 
 
-<!-- <section>
-    <div class="Card"> -->
-        <!-- Your JPro will be loaded inside this div -->
-        <!-- <jpro-app loader="none" href="/jpro/app/Board" loader="false" />
-    </div> 
-</section> -->
 
-<!-- Added Test -->
-<div class="game-play">
-    <div id="unity-container" class="unity-desktop">
+    <!-- <section>
+        <div class="Card"> -->
+            <!-- Your JPro will be loaded inside this div -->
+            <!-- <jpro-app loader="none" href="/jpro/app/Board" loader="false" />
+        </div> 
+    </section> -->
+
+    <!-- Added Test -->
+    
+    <!-- <div id="unity-container" class="unity-desktop">
         <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
         <div id="unity-loading-bar">
             <div id="unity-logo"></div>
@@ -66,53 +156,52 @@
             <div id="unity-fullscreen-button"></div>
             <div id="unity-build-title">Coin Drop</div>
         </div>
-    </div>
-</div>  
+    </div> -->
+   
+    <!-- <section class="section"> -->
+        <!-- <div class="container portfolio-grid"> -->
 
-<!-- <section class="section"> -->
-    <div class="container portfolio-grid">
+            <!-- Project Card -->
+            <!-- <div class="project-card"> -->
+                <!-- <img src="https://via.placeholder.com/500x300" alt="Project Preview" />
+                <div class="project-info">
+                    <h3>1</h3>
+                    <p>...</p>
+                    <a href="#" class="btn small">View</a>
+                </div>
+            </div> -->
 
-        <!-- Project Card -->
-        <div class="project-card">
-            <img src="https://via.placeholder.com/500x300" alt="Project Preview" />
-            <div class="project-info">
-                <h3>1</h3>
-                <p>...</p>
-                <a href="#" class="btn small">View</a>
+            <!-- Project Card -->
+            <!-- <div class="project-card">
+                <img src="https://via.placeholder.com/500x300" alt="Project Preview" />
+                <div class="project-info">
+                    <h3>2</h3>
+                    <p>...</p>
+                    <a href="#" class="btn small">View</a>
+                </div>
+            </div> -->
+
+            <!-- Project Card -->
+            <!-- <div class="project-card">
+                <img src="https://via.placeholder.com/500x300" alt="Project Preview" />
+                <div class="project-info">
+                    <h3>3</h3>
+                    <p>...</p>
+                    <a href="#" class="btn small">View</a>
+                </div>
             </div>
+
+        </div> -->
+    <!-- </section> -->
+
+    <footer>
+        <div class="container">
+            <!-- <p>© 2026 Your Name</p> -->
+            <p>2026</p>
         </div>
+    </footer>
 
-        <!-- Project Card -->
-        <div class="project-card">
-            <img src="https://via.placeholder.com/500x300" alt="Project Preview" />
-            <div class="project-info">
-                <h3>2</h3>
-                <p>...</p>
-                <a href="#" class="btn small">View</a>
-            </div>
-        </div>
-
-        <!-- Project Card -->
-        <div class="project-card">
-            <img src="https://via.placeholder.com/500x300" alt="Project Preview" />
-            <div class="project-info">
-                <h3>3</h3>
-                <p>...</p>
-                <a href="#" class="btn small">View</a>
-            </div>
-        </div>
-
-    </div>
-<!-- </section> -->
-
-<footer>
-    <div class="container">
-        <!-- <p>© 2026 Your Name</p> -->
-        <p>2026</p>
-    </div>
-</footer>
-
-<script src="coin-play.js"></script>
-    
+    <script src="coin-play.js"></script>
+        
 </body>
 </html>

@@ -174,7 +174,7 @@
 .game-play{
     display: absolute;
     position: absolute;
-    
+
 }
 
 /* FOOTER */
@@ -187,3 +187,203 @@ footer {
     margin-top: 40px;
 }
 
+
+/* ///// */
+/* PAGE BASICS */
+/* Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+}
+
+/* GRID LAYOUT */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* PROJECT CARD */
+.project {
+    display: flex;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    align-items: center;
+}
+
+/* FULL WIDTH ROW */
+.full {
+    grid-column: span 2; /* takes entire row */
+}
+
+/* HALF WIDTH (default) */
+.half {
+    grid-column: span 1;
+}
+
+/* MEDIA */
+.media {
+    flex: 2;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+    background: black;
+}
+
+.media img,
+.media video,
+.media iframe {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+
+/* INFO */
+.info {
+    flex: 1;
+    max-width: 260px;
+}
+
+.info h2 {
+    margin: 0 0 6px;
+}
+
+.date {
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+
+.desc {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+
+    
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full {
+        grid-column: span 1;
+    }
+
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info {
+        max-width: 100%;
+    }
+
+}
+
+    /* .unity-wrapper {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        border-radius: 12px;
+        position: relative;
+        background-color: lightgreen;
+        display: block;
+    } */
+
+    /* Unity container fills wrapper */
+    /* .media {
+        flex: 2;
+        overflow: hidden;
+        border-radius: 12px;
+    } */
+
+    /* Unity wrapper behaves like any media element */
+    /* .media {
+    flex: 2;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    } */
+
+    /* THIS is your media box shape */
+    .unity-media {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+    }
+
+    /* Unity fills the media box */
+    /* #unity-container {
+        position: absolute;
+        inset: 0; 
+        width: 100%;
+        height: 100%;
+
+        
+    } */
+
+    /* Canvas fully responsive */
+    #unity-canvas {
+        width: 100% !important;
+        height: 100% !important;
+        display: block;
+        background-color: red;
+        /* top: 50%; */
+        /* transform: translate(100px); */
+    }
+
+
+.project {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* THIS defines the actual section size */
+
+
+/* wrapper fills media */
+.unity-wrapper {
+position: relative;
+inset: 0;
+width: 100%;
+height: 100%;
+}
+
+#unity-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    inset: 0;
+}
+
+#unity-canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
+
+/* #unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
+#unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
+#unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('progress-bar-empty-dark.png') no-repeat center }
+#unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center } */
