@@ -240,7 +240,8 @@ header {
     aspect-ratio: 16 / 9;
     overflow: hidden;
     border-radius: 12px;
-    background: black;
+    /* background: black; */
+    background: rgb(182, 240, 187);
 }
 
 .media img,

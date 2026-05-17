@@ -4,6 +4,7 @@ var loadingBar = document.querySelector("#unity-loading-bar");
 var progressBarFull = document.querySelector("#unity-progress-bar-full");
 var fullscreenButton = document.querySelector("#unity-fullscreen-button");
 var warningBanner = document.querySelector("#unity-warning");
+var playButton = document.querySelector("playButt01");
 
 // Shows a temporary message banner/ribbon for a few seconds, or
 // a permanent error message on top of the canvas if type=='error'.
@@ -92,9 +93,9 @@ createUnityInstance(canvas, config, (progress) => {
     progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
         loadingBar.style.display = "none";
-        fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-        };
+        // fullscreenButton.onclick = () => {
+        //     unityInstance.SetFullscreen(1);
+        // };
         }).catch((message) => {
         alert(message);
         });
