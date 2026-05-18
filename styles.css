@@ -3,13 +3,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", Arial, sans-serif;
+    /* font-family: "Inter", Arial, sans-serif; */
+    font-family: "Shantell Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "BNCE" 0,
+        "INFM" 0,
+        "SPAC" 0;
 }
 
 :root {
     --bg: #f7f7fa;
     --text: #1a1a1a;
     --subtle: #6c6c6c;
+    /* --accent: #6366f1;
+    --accent-hover: #4f46e5; */
     --accent: #6366f1;
     --accent-hover: #4f46e5;
     --card: #ffffff;
@@ -21,13 +31,13 @@
 
 /* MAIN LAYOUT WRAPPER */
 .container {
-    width: min(1100px, 90%);
+    width: min(95%);
     margin: auto;
 }
 
 /* NAVBAR */
 .navbar {
-    background: #ffffffd9;
+    background: #ffffff;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #e5e5e5;
     position: sticky;
@@ -204,7 +214,7 @@ body {
 
 header {
     text-align: center;
-    padding: 40px;
+    padding: 10px;
 }
 
 /* GRID LAYOUT */
@@ -412,7 +422,8 @@ height: 100%;
     padding: 10px 20px;
     /* background: #444; */
     background: var(--color1);
-    text-shadow: -2px 0 2px var(--color3), 0 2px 2px var(--color3), 2px 0 2px var(--color3), 0 -2px 2px var(--color3);
+    /* text-shadow: -2px 0 2px var(--color3), 0 2px 2px var(--color3), 2px 0 2px var(--color3), 0 -2px 2px var(--color3); */
+    text-shadow: -2px 0 2px var(--accent), 0 2px 2px var(--accent), 2px 0 2px var(--accent), 0 -2px 2px var(--accent);
     color: white;
     border: none;
     cursor: pointer;
@@ -429,6 +440,7 @@ height: 100%;
 
     background: var(--color2); 
     
+    
 }
 
 .tab-button:hover {
@@ -437,7 +449,10 @@ height: 100%;
     /* background: var(--color2); */
 
     /* background: var(--color2); */
-    box-shadow: -2px 0 2px var(--color3), 0 2px 2px var(--color3), 2px 0 2px var(--color3), 0 -2px 2px var(--color3);
+    /* box-shadow: -2px 0 2px var(--color3), 0 2px 2px var(--color3), 2px 0 2px var(--color3), 0 -2px 2px var(--color3); */
+    
+    box-shadow: -2px 0 2px var(--accent), 0 2px 2px var(--accent), 2px 0 2px var(--accent), 0 -2px 2px var(--accent);
+
 }
 
 .tab-content {
