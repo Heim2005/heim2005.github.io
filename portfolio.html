@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="coin-play.css">
+    <!-- <link rel="stylesheet" href="coin-play.css"> -->
 
     <!--------------------->
     
@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="CoinDrop/TemplateData/style.css">
     <!--------------------->
 
-    <link rel="stylesheet" type="text/css" href="/jpro/css/jpro.css">
-    <script src="/jpro/js/jpro.js" type="text/javascript"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="/jpro/css/jpro.css"> -->
+    <!-- <script src="/jpro/js/jpro.js" type="text/javascript"></script> -->
     
 </head>
 <body>
@@ -40,10 +40,91 @@
         </div>
     </section>
 
-    <main class="grid">
+    <div class="portfolio-container">
+
+        <div class="tabs">
+            <button class="tab-button active" data-tab="modeling">Modeling</button>
+            <button class="tab-button" data-tab="coding">Coding</button>
+            <button class="tab-button" data-tab="gamemaking">Game Making</button>
+        </div>
+
+        <div class="tab-content active" id="modeling">
+            <h2>3D Modeling</h2>
+            <p>Put your modeling renders, Blender images, and animations here.</p>
+        </div>
+
+        <div class="tab-content" id="coding">
+            <h2>Coding Projects</h2>
+            <p>Showcase JavaScript, HTML/CSS, websites, and GitHub repositories.</p>
+        </div>
+
+        <div class="tab-content" id="gamemaking">
+            <h2 style="margin-bottom: 20px;">Game Development</h2>
+            <!-- <p>Show prototypes, gameplay videos, screenshots, Unity/Unreal work.</p> -->
+
+            <main class="grid" style="margin-top: 50px;">
+            
+                <section class="project half">
+                
+                    <div class="media">
+                        <img src="PortfolioMedia/testIMG.jpg">
+                    </div>
+                    <div class="info">
+                        <h2>Big Featured Project</h2>
+                        <p class="date">2024</p>
+                        <p class="desc">This takes the full row.</p>
+                    </div>
+
+                </section>
+                <section class="project half">
+                    <div class="media unity-wrapper">
+
+                        
+                        
+                        <div id="unity-container" > 
+                            
+                            <canvas id="unity-canvas" width=100% height=100% tabindex="-1"></canvas>
+                            <!-- <svg id="playButt01" xmlns="http://www.w3.org/2000/svg" height="20vw" viewBox="0 -960 960 960" width="100%" fill="#f21111" style="z-index: 1;">
+                                <path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/>
+                            </svg> -->
+                            <div id="unity-loading-bar">
+                                <div id="unity-logo"></div>
+                                <div id="unity-progress-bar-empty">
+                                    <div id="unity-progress-bar-full"></div>
+                                </div> 
+                                
+                            </div>
+
+                            
+                            <!-- <div id="unity-warning"> </div> -->
+                            <!-- <div id="unity-footer">
+                                <div id="unity-webgl-logo"></div>
+                                <div id="unity-fullscreen-button"></div>
+                                <div id="unity-build-title">Coin Drop</div>
+                            </div> -->
+                        </div>
+                    
+                        
+                    </div>
+
+                    <div class="info">
+                        <h2>Coin Drop</h2>
+                        <p class="date">2024</p>
+                        <p class="desc">Unity WebGL game built for physics interaction.</p>
+                        <!-- <div id="unity-fullscreen-button" ></div>  -->
+                            
+                    </div>
+                </section>
+
+            </main>
+        </div>
+
+    </div>
+
+    <!-- <main class="grid"> -->
 
         <!-- FULL WIDTH ROW -->
-        <section class="project full">
+        <!-- <section class="project full">
             <div class="media">
                 <img src="image1.jpg">
             </div>
@@ -52,7 +133,7 @@
                 <p class="date">2024</p>
                 <p class="desc">This takes the full row.</p>
             </div>
-        </section>
+        </section> -->
 
         <!-- TWO IN A ROW -->
         <!-- <section class="project half">
@@ -66,16 +147,7 @@
             </div>
         </section> -->
 
-        <section class="project half">
-            <div class="media">
-                <img src="PortfolioMedia/testIMG.jpg">
-            </div>
-            <div class="info">
-                <h2>Big Featured Project</h2>
-                <p class="date">2024</p>
-                <p class="desc">This takes the full row.</p>
-            </div>
-        </section>
+        
 
         <!-- <section class="project half">
             <div class="media">
@@ -88,47 +160,9 @@
             </div>
         </section> -->
 
-        <section class="project half">
-            <div class="media unity-wrapper">
 
-                
-                
-                <div id="unity-container" > 
-                    
-                    <canvas id="unity-canvas" width=100% height=100% tabindex="-1"></canvas>
-                    <!-- <svg id="playButt01" xmlns="http://www.w3.org/2000/svg" height="20vw" viewBox="0 -960 960 960" width="100%" fill="#f21111" style="z-index: 1;">
-                        <path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/>
-                    </svg> -->
-                    <div id="unity-loading-bar">
-                        <div id="unity-logo"></div>
-                        <div id="unity-progress-bar-empty">
-                            <div id="unity-progress-bar-full"></div>
-                        </div> 
-                        
-                    </div>
 
-                    
-                    <!-- <div id="unity-warning"> </div> -->
-                    <!-- <div id="unity-footer">
-                        <div id="unity-webgl-logo"></div>
-                        <div id="unity-fullscreen-button"></div>
-                        <div id="unity-build-title">Coin Drop</div>
-                    </div> -->
-                </div>
-            
-                
-            </div>
-
-                <div class="info">
-                    <h2>Coin Drop</h2>
-                    <p class="date">2024</p>
-                    <p class="desc">Unity WebGL game built for physics interaction.</p>
-                    <div id="unity-fullscreen-button" ></div> 
-                    
-                </div>
-        </section>
-
-        <!-- FULL WIDTH AGAIN -->
+        <!-- FULL WIDTH AGAIN
         <section class="project full">
             <div class="media">
                 <img src="image2.jpg">
@@ -138,9 +172,9 @@
                 <p class="date">2024</p>
                 <p class="desc">Full row again.</p>
             </div>
-        </section>
+        </section> -->
 
-    </main>
+    <!-- </main> -->
 
 
 
@@ -214,6 +248,7 @@
     </footer>
 
     <script src="coin-play.js"></script>
+    <script src="script.js"></script>
         
 </body>
 </html>
