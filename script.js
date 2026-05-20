@@ -56,6 +56,28 @@ document.getElementById("startUnityBtn2").addEventListener("click", () => {
    
 });
 
+document.getElementById("startUnityBtn3").addEventListener("click", () => {
+
+    // Swap screens
+    document.getElementById("unity-start-screen3").style.display = "none";
+    // document.getElementById("unity-container2").style.display = "block";
+
+    document.getElementById("game3").src="https://heim2005.github.io/NetworkingDemo/index.html";
+    
+   
+});
+
+document.getElementById("startUnityBtn4").addEventListener("click", () => {
+
+    // Swap screens
+    document.getElementById("unity-start-screen4").style.display = "none";
+    // document.getElementById("unity-container2").style.display = "block";
+
+    document.getElementById("game4").src="https://heim2005.github.io/NetworkingDemo/index.html";
+    
+   
+});
+
 
 
 (function() {
