@@ -23,7 +23,7 @@ document.getElementById("startUnityBtn").addEventListener("click", () => {
 
     // Swap screens
     document.getElementById("unity-start-screen").style.display = "none";
-    document.getElementById("unity-container").style.display = "block";
+    // document.getElementById("unity-container").style.display = "block";
 
 
     document.getElementById("game1").src =  "https://heim2005.github.io/CoinDrop/index.html";
@@ -49,23 +49,11 @@ document.getElementById("startUnityBtn2").addEventListener("click", () => {
 
     // Swap screens
     document.getElementById("unity-start-screen2").style.display = "none";
-    document.getElementById("unity-container2").style.display = "block";
+    // document.getElementById("unity-container2").style.display = "block";
 
-    // Load Unity dynamically
-    const loaderScript = document.createElement("script");
-    loaderScript.src = "Build/UnityLoader.js"; // your real Unity loader file here
-    document.body.appendChild(loaderScript);
-
-    loaderScript.onload = () => {
-        createUnityInstance(
-            document.getElementById("unity-container2"),
-            {
-                dataUrl: "Build/build.data",
-                frameworkUrl: "Build/build.framework.js",
-                codeUrl: "Build/build.wasm",
-            }
-        );
-    };
+    document.getElementById("game2").src="https://heim2005.github.io/PhysicsDemo/index.html";
+    
+   
 });
 
 

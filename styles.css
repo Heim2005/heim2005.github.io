@@ -586,6 +586,82 @@ width: 100%; */
 }
 
 
+
+#unity-start-screen2 {
+    background: #222;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #0006;
+}
+
+#startUnityBtn2 {
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    background: #6a4bc8;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+#startUnityBtn2:hover {
+    background: #5238a8;
+}
+
+#unity-start-screen3 {
+    background: #222;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #0006;
+}
+
+#startUnityBtn3 {
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    background: #6a4bc8;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+#startUnityBtn3:hover {
+    background: #5238a8;
+}
+
+#unity-start-screen4 {
+    background: #222;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #0006;
+}
+
+#startUnityBtn4 {
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    background: #6a4bc8;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+#startUnityBtn4:hover {
+    background: #5238a8;
+}
+
 /* HERO SECTION */
 
 .hero-showcase {
