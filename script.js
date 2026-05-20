@@ -49,12 +49,12 @@ document.getElementById("startUnityBtn").addEventListener("click", () => {
     const video = document.getElementById('pianoVid');
     // const status = document.getElementById('status');
     let holdTimer = null;
-    const holdDuration = 1000; // milliseconds to trigger hold
+    const holdDuration = 500; // milliseconds to trigger hold
 
     // Function to run when hold is detected
     function onHold() {
         // status.textContent = "Hold detected!";
-        video.muted = 'false';
+        video.muted = false;
     }
 
     // Start timer on press
@@ -72,7 +72,7 @@ document.getElementById("startUnityBtn").addEventListener("click", () => {
             holdTimer = null;
         }
         // status.textContent = "Released.";
-        video.muted = 'true';
+        video.muted = true;
     }
 
     // Mouse events

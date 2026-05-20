@@ -97,7 +97,7 @@ createUnityInstance(canvas, config, (progress) => {
         //     unityInstance.SetFullscreen(1);
         // };
         }).catch((message) => {
-        alert(message);
+        // alert(message);
         });
     };
 
