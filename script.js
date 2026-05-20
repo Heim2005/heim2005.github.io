@@ -42,6 +42,29 @@ document.getElementById("startUnityBtn").addEventListener("click", () => {
     };
 });
 
+document.getElementById("startUnityBtn2").addEventListener("click", () => {
+
+    // Swap screens
+    document.getElementById("unity-start-screen2").style.display = "none";
+    document.getElementById("unity-container2").style.display = "block";
+
+    // Load Unity dynamically
+    const loaderScript = document.createElement("script");
+    loaderScript.src = "Build/UnityLoader.js"; // your real Unity loader file here
+    document.body.appendChild(loaderScript);
+
+    loaderScript.onload = () => {
+        createUnityInstance(
+            document.getElementById("unity-container2"),
+            {
+                dataUrl: "Build/build.data",
+                frameworkUrl: "Build/build.framework.js",
+                codeUrl: "Build/build.wasm",
+            }
+        );
+    };
+});
+
 
 
 (function() {
