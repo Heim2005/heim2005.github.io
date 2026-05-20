@@ -27,16 +27,16 @@ document.getElementById("startUnityBtn").addEventListener("click", () => {
 
     // Load Unity dynamically
     const loaderScript = document.createElement("script");
-    loaderScript.src = "Build/UnityLoader.js"; // your real Unity loader file here
+    loaderScript.src = "CoinDrop/Build/CoinDrop.loader.js"; // your real Unity loader file here
     document.body.appendChild(loaderScript);
 
     loaderScript.onload = () => {
         createUnityInstance(
             document.getElementById("unity-container"),
             {
-                dataUrl: "Build/build.data",
-                frameworkUrl: "Build/build.framework.js",
-                codeUrl: "Build/build.wasm",
+                dataUrl: "CoinDrop/Build/CoinDrop.data",
+                frameworkUrl: "CoinDrop/Build/CoinDrop.framework.js",
+                codeUrl: "CoinDrop/Build/CoinDropNEW.wasm",
             }
         );
     };
