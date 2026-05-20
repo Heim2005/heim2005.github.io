@@ -1,3 +1,5 @@
+
+//tabs
 document.querySelectorAll(".tab-button").forEach(button => {
     button.addEventListener("click", () => {
 
@@ -16,7 +18,7 @@ document.querySelectorAll(".tab-button").forEach(button => {
     });
 });
 
-
+//coin game
 document.getElementById("startUnityBtn").addEventListener("click", () => {
 
     // Swap screens
@@ -39,3 +41,47 @@ document.getElementById("startUnityBtn").addEventListener("click", () => {
         );
     };
 });
+
+
+
+(function() {
+    const button = document.getElementById('pianoPress');
+    const video = document.getElementById('pianoVid');
+    // const status = document.getElementById('status');
+    let holdTimer = null;
+    const holdDuration = 1000; // milliseconds to trigger hold
+
+    // Function to run when hold is detected
+    function onHold() {
+        // status.textContent = "Hold detected!";
+        video.muted = 'false';
+    }
+
+    // Start timer on press
+    function startHoldTimer() {
+        // Prevent multiple timers
+        if (holdTimer) return;
+        holdTimer = setTimeout(onHold, holdDuration);
+        // status.textContent = "Holding...";
+    }
+
+    // Cancel timer on release
+    function cancelHoldTimer() {
+        if (holdTimer) {
+            clearTimeout(holdTimer);
+            holdTimer = null;
+        }
+        // status.textContent = "Released.";
+        video.muted = 'true';
+    }
+
+    // Mouse events
+    button.addEventListener('mousedown', startHoldTimer);
+    button.addEventListener('mouseup', cancelHoldTimer);
+    button.addEventListener('mouseleave', cancelHoldTimer);
+
+    // Touch events (mobile)
+    button.addEventListener('touchstart', startHoldTimer);
+    button.addEventListener('touchend', cancelHoldTimer);
+    button.addEventListener('touchcancel', cancelHoldTimer);
+})();
