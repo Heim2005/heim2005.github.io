@@ -1,10 +1,10 @@
-var container = document.querySelector("#unity-container");
-var canvas = document.querySelector("#unity-canvas");
-var loadingBar = document.querySelector("#unity-loading-bar");
-var progressBarFull = document.querySelector("#unity-progress-bar-full");
-var fullscreenButton = document.querySelector("#unity-fullscreen-button");
-var warningBanner = document.querySelector("#unity-warning");
-// var playButton = document.querySelector("playButt01");
+var container = document.querySelector("#unity-container2");
+var canvas = document.querySelector("#unity-canvas2");
+var loadingBar = document.querySelector("#unity-loading-bar2");
+var progressBarFull = document.querySelector("#unity-progress-bar-full2");
+var fullscreenButton = document.querySelector("#unity-fullscreen-button2");
+var warningBanner = document.querySelector("#unity-warning2");
+// var playButton = document.querySelector("playButt02");
 
 // Shows a temporary message banner/ribbon for a few seconds, or
 // a permanent error message on top of the canvas if type=='error'.
@@ -30,12 +30,12 @@ else {
 updateBannerVisibility();
 }
 
-var buildUrl = "CoinDrop/Build";
-var loaderUrl = buildUrl + "/CoinDrop.loader.js";
+var buildUrl = "PhysicsDemo/Build";
+var loaderUrl = buildUrl + "/PhysicsDemo.loader.js";
 var config = {
-dataUrl: buildUrl + "/CoinDrop.data",
-frameworkUrl: buildUrl + "/CoinDrop.framework.js",
-codeUrl: buildUrl + "/CoinDropNEW.wasm",
+dataUrl: buildUrl + "/PhysicsDemo.data",
+frameworkUrl: buildUrl + "/PhysicsDemo.framework.js",
+codeUrl: buildUrl + "/PhysicsDemo.wasm",
 streamingAssetsUrl: "StreamingAssets",
 companyName: "Flcc student work",
 productName: "Coin Drop",
