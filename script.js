@@ -25,21 +25,24 @@ document.getElementById("startUnityBtn").addEventListener("click", () => {
     document.getElementById("unity-start-screen").style.display = "none";
     document.getElementById("unity-container").style.display = "block";
 
-    // Load Unity dynamically
-    const loaderScript = document.createElement("script");
-    loaderScript.src = "CoinDrop/Build/CoinDrop.loader.js"; // your real Unity loader file here
-    document.body.appendChild(loaderScript);
 
-    loaderScript.onload = () => {
-        createUnityInstance(
-            document.getElementById("unity-container"),
-            {
-                dataUrl: "Build/build.data",
-                frameworkUrl: "Build/build.framework.js",
-                codeUrl: "Build/build.wasm",
-            }
-        );
-    };
+    document.getElementById("game1").src =  "https://heim2005.github.io/CoinDrop/index.html";
+    // document.getElementById("game1").load();
+    // Load Unity dynamically
+    // const loaderScript = document.createElement("script");
+    // loaderScript.src = "CoinDrop/Build/CoinDrop.loader.js"; // your real Unity loader file here
+    // document.body.appendChild(loaderScript);
+
+    // loaderScript.onload = () => {
+    //     createUnityInstance(
+    //         document.getElementById("unity-container"),
+    //         {
+    //             dataUrl: "Build/build.data",
+    //             frameworkUrl: "Build/build.framework.js",
+    //             codeUrl: "Build/build.wasm",
+    //         }
+    //     );
+    // };
 });
 
 document.getElementById("startUnityBtn2").addEventListener("click", () => {

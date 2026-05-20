@@ -560,7 +560,7 @@ width: 100%; */
 } */
 
 
-#unity-start-screen2 {
+#unity-start-screen {
     background: #222;
     color: white;
     padding: 40px;
@@ -569,7 +569,7 @@ width: 100%; */
     box-shadow: 0 0 12px #0006;
 }
 
-#startUnityBtn2 {
+#startUnityBtn {
     margin-top: 20px;
     padding: 15px 40px;
     font-size: 1.2rem;
@@ -581,7 +581,7 @@ width: 100%; */
     transition: 0.2s;
 }
 
-#startUnityBtn2:hover {
+#startUnityBtn:hover {
     background: #5238a8;
 }
 
