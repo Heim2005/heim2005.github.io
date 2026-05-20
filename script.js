@@ -34,9 +34,9 @@ document.getElementById("startUnityBtn").addEventListener("click", () => {
         createUnityInstance(
             document.getElementById("unity-container"),
             {
-                dataUrl: "CoinDrop/Build/CoinDrop.data",
-                frameworkUrl: "CoinDrop/Build/CoinDrop.framework.js",
-                codeUrl: "CoinDrop/Build/CoinDropNEW.wasm",
+                dataUrl: "Build/build.data",
+                frameworkUrl: "Build/build.framework.js",
+                codeUrl: "Build/build.wasm",
             }
         );
     };
