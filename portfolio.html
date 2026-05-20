@@ -76,12 +76,80 @@
     <div class="portfolio-container">
 
         <div class="tabs">
-            <button class="tab-button active" data-tab="modeling">Modeling + Animation</button>
+            <!-- <button class="tab-button" data-tab="modeling">Modeling + Animation</button> -->
             <button class="tab-button" data-tab="coding">Pure Programming</button>
             <button class="tab-button" data-tab="gamemaking">Game Engine Projects</button>
         </div>
 
-        <div class="tab-content active" id="modeling">
+        <div class="tab-content active" id="start">
+            <section class="section">
+
+                <section class="collage">
+                    <div class="col">
+                        <img src="Portfolio/img/mappedDone.jpg" alt="">
+                        <img src="Portfolio/img/Screenshot 2026-05-20 074029.png" alt="">
+                        
+                    </div>
+                    <div class="col">
+                        <img src="Portfolio/img/0520.gif" alt="">
+                        <img src="Portfolio/img/Untitled_Artwork (1).png" alt="">
+                        
+                    </div>
+                    <div class="col">
+                        
+                        <img src="Portfolio/img/BlendHandRec.gif" alt="">
+                        <img src="Portfolio/img/humanoidUV.png" alt="">
+                        <img src="Portfolio/Projects/ezgif-717ebb0189752562.gif" alt="">
+                    </div>   
+                    <div class="col">
+                        <img src="Portfolio/img/Human01.png" alt="">
+                        <img src="Portfolio/img/noTopology.png" alt="">
+                        <!-- <img src="Portfolio/img/Untitled.png" alt=""> -->
+                        
+                    </div>  
+                    <div class="col"> 
+                        <img src="Portfolio/img/run.gif" alt="">
+                        <img src="Portfolio/img/Rigged.png" alt="">
+                        <img src="Portfolio/img/topology.png" alt="">
+                        <!-- Add as many images as you want -->
+                    </div>
+                     
+                </section>
+
+                <!-- <div class="container centered-text">
+                    <h2>My Projects</h2>
+                    <p>...</p>
+                </div> -->
+                <!-- <section class="hero-showcase">
+
+                    <div class="hero-collage-left">
+
+                        <img src="images/render1.jpg" alt="">
+                        <img src="images/render2.jpg" alt="">
+                        <img src="images/render3.jpg" alt="">
+                       
+                    </div>
+
+                    <div class="hero-video">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/showcase.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="hero-collage-right">
+
+                        <img src="images/render1.jpg" alt="">
+                        <img src="images/render2.jpg" alt="">
+                        <img src="images/render3.jpg" alt="">
+                        
+
+                    </div>
+
+                </section> -->
+            </section>
+        </div>
+
+        <div class="tab-content" id="modeling">
             <h2 style="margin-bottom: 20px;">3D Modeling</h2>
             <!-- <p>Put your modeling renders, Blender images, and animations here.</p> -->
             <main class="grid" style="margin-top: 50px;"> 
@@ -205,29 +273,32 @@
                             
                     </div>
                 </section>
-                <section class="project full">
+                <section class="project full" style="flex-direction: column;">
 
-                    <div>
-                        <div id="unity-start-screen3" style="position: absolute; height: 300px; width: 480px; align-content: center;">
-                            <h2 >Play Game</h2>
-                            <button id="startUnityBtn3">▶ Start</button>
+                    <div style="display: flex; flex-direction: row; gap: 100px">
+                        <div>
+                            <div id="unity-start-screen3" style="position: absolute; height: 300px; width: 480px; align-content: center;">
+                                <h2 >Play Game</h2>
+                                <button id="startUnityBtn3">▶ Start</button>
+                            </div>
+                            <iframe id="game3" width="480" height="300" title="Networking1"  scrolling="no" style="border: none;" >
+                                Your browser does not support iframes.
+                                
+                            </iframe>
                         </div>
-                        <iframe id="game3" width="480" height="300" title="Networking1"  scrolling="no" style="border: none;" >
-                            Your browser does not support iframes.
-                            
-                        </iframe>
-                    </div>
-                    <div>
-                        <div id="unity-start-screen4" style="position: absolute; height: 300px; width: 480px; align-content: center;">
-                            <h2 >Play Game</h2>
-                            <button id="startUnityBtn4">▶ Start</button>
+                        <div style="flex-direction: column;">
+                            <div id="unity-start-screen4" style="position: absolute; height: 300px; width: 480px; align-content: center;">
+                                <h2 >Play Game</h2>
+                                <button id="startUnityBtn4">▶ Start</button>
+                            </div>
+                            <iframe id="game4" width="480" height="300" title="Networking1"  scrolling="no" style="border: none;" >
+                                Your browser does not support iframes.
+                                
+                            </iframe>
                         </div>
-                        <iframe id="game4" width="480" height="300" title="Networking1"  scrolling="no" style="border: none;" >
-                            Your browser does not support iframes.
-                            
-                        </iframe>
                     </div>
-                    <div class="info">
+
+                    <div class="info" >
                         <h2>Networking Demo</h2>
                         <p class="date">2025</p>
                         <p class="desc">Unity WebGL game built for physics interaction.</p>
