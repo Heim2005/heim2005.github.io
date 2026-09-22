@@ -1037,6 +1037,16 @@ width: 100%; */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer fixed only on Featured / Start tab */
+body:has(#start.active) footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    margin: 0;
+}
+
 
 /* =========================================
    TABLET
