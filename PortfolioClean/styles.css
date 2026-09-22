@@ -193,13 +193,25 @@
 }
 
 /* FOOTER */
-footer {
+/* footer {
     background: white;
     border-top: 1px solid #e5e5e5;
     padding: 20px;
     text-align: center;
     color: var(--subtle);
     margin-top: 40px;
+} */
+
+footer {
+    background: white;
+    border-top: 1px solid #e5e5e5;
+
+    padding: 20px;
+    text-align: center;
+    color: var(--subtle);
+
+    margin-top: 40px;
+    flex-shrink: 0;
 }
 
 
@@ -211,6 +223,8 @@ body {
     margin: 0;
     background: #f4f4f4;
 }
+
+
 
 header {
     text-align: center;
@@ -236,6 +250,12 @@ header {
     border-radius: 14px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     align-items: center;
+}
+
+
+
+.portfolio-container {
+    flex: 1;
 }
 
 /* FULL WIDTH ROW */
@@ -819,20 +839,20 @@ width: 100%; */
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     transition: 0.3s ease;
 } */
-
+/* 
 .collage {
     display: flex;
     width: 90%;
     margin: auto;
     gap: 30px;
-    align-items: stretch;     /* makes all columns equal height */
+    align-items: stretch;    
 }
 
 .col {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* <--- centers content vertically */
+    justify-content: center;  
     gap: 30px;
 }
 
@@ -842,7 +862,43 @@ width: 100%; */
     object-fit: cover;
     display: block;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+} */
+
+/* .collage {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
+
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    min-width: 0;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    border-radius: 12px;
+    object-fit: contain;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.25s ease;
+} */
+/* 
+.col img:hover {
+    transform: scale(1.025);
+} */
 
  /* .collage {
     display: grid;
@@ -863,7 +919,7 @@ width: 100%; */
 
 
 /* Responsive behavior */
-@media (max-width: 1100px) {
+/* @media (max-width: 1100px) {
     .collage {
         column-count: 3;
     }
@@ -878,5 +934,136 @@ width: 100%; */
 @media (max-width: 500px) {
     .collage {
         column-count: 1;
+    }
+} */
+
+/* =========================================
+   FEATURED TAB ONLY
+   Fits the collage into the available
+   viewport without page scrolling
+   ========================================= */
+
+#start {
+    /*
+     * The Featured tab gets the remaining
+     * viewport height.
+     *
+     * 50px = portfolio-container top padding
+     * 20px = tabs bottom margin
+     *
+     * Adjust these only if your header spacing changes.
+     */
+    height: calc(100vh - 180px);
+    min-height: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+#start > h2 {
+    flex-shrink: 0;
+    margin-bottom: 0 !important;
+}
+
+#start > .section {
+    flex: 1;
+    min-height: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px !important;
+    overflow: hidden;
+}
+
+#start .collage {
+    flex: 1;
+    min-height: 0;
+
+    width: 100%;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+
+    overflow: hidden;
+}
+
+#start .col {
+    min-width: 0;
+    min-height: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    overflow: hidden;
+}
+
+#start .col img {
+    /*
+     * Each image gets a share of the
+     * available height in its column.
+     */
+    flex: 1 1 0;
+    min-height: 0;
+
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 900px) {
+
+    #start {
+        height: calc(100vh - 170px);
+    }
+
+    #start .collage {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    #start .col {
+        gap: 10px;
+    }
+}
+
+
+/* ---------- Phone ---------- */
+
+@media (max-width: 600px) {
+
+    #start {
+        height: calc(100vh - 155px);
+    }
+
+    #start > .section {
+        padding: 10px !important;
+    }
+
+    #start .collage {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    #start .col {
+        gap: 8px;
+    }
+
+    #start .col img {
+        border-radius: 8px;
     }
 }
